@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>No me pagan lo suficiente</title>
+</head>
+<body>
+<script>
+/*
+1.
+var numero = prompt("ingrese el valor")
+    for (let i = 1; i <= 10; i++) {
+        console.log(numero * i);
+    }
+*/
+
+    /*
+    2.
+var numero = prompt("ingrese el valor");
+var par = 0;
+var impar = 0;
+for (var i = 1; i <= numero; i++) {
+    if (i % 2 === 0) {
+        par++;
+    } else {
+        impar++;
+    }
+}
+console.log("Cantidad de numeros pares:", par);
+console.log("Cantidad de numeros impares:", impar);
+*/
+    /*
+    3.
+var numero = prompt("ingrese el valor");
+    var suma = 0;
+    while (numero > 0) {
+        suma += numero % 10;
+        numero = Math.floor(numero / 10);
+    }
+
+console.log(suma);
+*/
+    /*
+    4.
+    var contador = 0;
+    let palabra;
+
+    while (true) {
+        palabra = prompt("Ingresa una palabra (o 'fin' para terminar):");
+        if (palabra === 'fin') {
+            break;
+        }
+        contador++;
+        
+    console.log("Cantidad de palabras ingresadas:", contador);
+    }
+    */
+/*
+    5.
+    var mes = prompt("ingrese el mes");
+switch (mes) {
+    case '12':
+    console.log("es verano:");
+    break;
+
+    case '1':
+        
+    console.log("es verano:");
+    break;
+
+    case '2':
+    
+    console.log("es verano:");
+    break;
+
+    case '3':
+    
+    console.log("es otoño:");
+    break;
+
+    case '4':
+    
+    console.log("es otoño:");
+    break;
+
+    case '5':
+    
+    console.log("es otoño:");
+    break;
+
+    case '6':
+    
+    console.log("es invierno:");
+    break;
+
+    case '7':
+    
+    console.log("es invierno:");
+    break;
+
+    case '8':
+    
+    console.log("es invierno:");
+    break;
+
+    case '9':
+    
+    console.log("es primavera:");
+    break;
+
+    case '10':
+    
+    console.log("es primavera:");
+    break;
+
+    case '11':
+    
+    console.log("es primavera:");
+    break;
+
+        break;
+}
+
+*/
+    /*
+var operacion = prompt("ingrese el operador");
+var num1 = parseInt(prompt("ingrese el valor"));
+var num2 = parseInt(prompt("ingrese el valor"));
+var resultado = 0;
+    switch (operacion) {
+        case 'suma':
+        resultado = num1 + num2;
+        console.log("Resultado: ", resultado);
+            break;
+        case 'resta':
+        resultado = num1 - num2;
+        console.log("Resultado: ", resultado);
+            break;
+        case 'multiplicacion':
+        resultado = num1 * num2;
+        console.log("Resultado: ", resultado);
+            break;
+        case 'division':
+        resultado = num1/num2;
+            if (num2 !== 0) {
+                console.log("Resultado: ", resultado);
+            } else {
+                console.log("Error: División por cero.");
+            }
+            break;
+        default:
+            console.log("Operación inválida. Usa suma, resta, multiplicacion o division.");
+    }
+    */
+       /*
+function mayor (num1, num2){
+if (num1>num2)
+{
+    return ("el primer valor es mayor");
+}
+else if (num1<num2)
+{
+    return ("el segundo valor es mayor");
+}
+else {
+    return("los valores son iguales");
+}
+}
+var numeromayor = mayor(parseInt(prompt("ingrese el valor1")), parseInt(prompt("ingrese el valor2")));
+console.log(numeromayor);
+ */
+
+function calcular(fecha){
+    const hoy = new Date();
+    const nacimiento = new Date(fecha);
+    let edad = hoy.getFullYear() - nacimiento.getFullYear();
+    let mes = hoy.getMonth() - nacimiento.getMonth();
+if (mes < 0 || (mes === 0 && hoy.getDate() < nacimiento.getDate())){
+    edad--;
+}
+return edad;
+}
+console.log(calcular("2000-05-20"));
+
+
+
+
+
+
+
+
+    /*
+    let nombres = ["juan", "pepe", "nahuel", "gustavo", "rap"];
+    for (let i=0; i<5; i++)
+{
+    console.log(nombres[i]);
+}
+let opcion = prompt("0) juan 1) pepe 2) nahuel 3) gustavo 4) rap ")
+
+switch (opcion) {
+        case '0': 
+        console.log("momazos", nombres[0]);
+        break;
+        case '1': 
+        console.log("momardos", nombres[1]);
+        break;
+        case '2': 
+        console.log("momardobich", nombres[2]);
+        break;
+        case '3': 
+        console.log("cerati", nombres[3]);
+        break;
+        case '4': 
+        console.log("cgs", nombres[4]);
+        break;
+    }
+    let n1 = prompt ("ingrese numero 1");
+    let n2 = prompt ("ingrese numero 2");
+
+    n1 = Number(n1);
+    n2 = Number(n2);
+
+    if (n1>n2){
+        console.log("SHISH n1 mayor");
+    }
+    else if (n2>n1){
+        console.log("SHISH n2 mayor");
+    }
+    else {
+        console.log("Que se hacia aca qnq");
+    }
+
+let edad = prompt ("ingrese la edad");
+if (edad > 18 ){
+    console.log("usted es mayor de edad :D")
+}
+else {
+    console.log("usted es menor :c")
+}
+*/
+
+</script>
+</body>
+</html>
